@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <title>Les chroniques de Basaros</title>
     <link type="text/css" rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-   <script>
-   console.log('hello');
-   $(function(){
-     $("#inclusion").load("first.html");
-   });
-   </script>
   </head>
   <body>
-      <div id="inclusion"></div>
+      <div class="chronique" data-id="extraitParquet1"></div>
 
+      <div class="chronique" data-id="extraitParquet2"></div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+  $(".chronique").each(function(){
+  console.log($(this).data("id") + ".html");
+    $($(this)).load($(this).data("id") + ".html");
+});
+  </script>
   </body>
 </html>

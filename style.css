@@ -1,0 +1,10 @@
+*, body, p {
+  text-align: justify;
+  text-justify: auto;
+}
+
+object {
+  width: 850px;
+  height: 350px;
+  text-justify: auto;
+}

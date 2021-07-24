@@ -6,17 +6,40 @@
     <link type="text/css" rel="stylesheet" href="style.css">
   </head>
   <body>
-      <div class="chronique" data-id="extraitParquet1"></div>
+    <div id="banniere"></div>
 
-      <div class="chronique" data-id="extraitParquet2"></div>
+    <div id="container">
+      <table width="100%">
+        <td width="30%"> <!-- Partie menu-->
+          <div id="menu-container">
+            <ul id="list">
+              <li class="list-li">L'Étreinte d'un parquet</li>
+              <ul class="sub-ul">
+                <li class="displayDefault" data-id=('EtreinteParquet1')>Extrait 1</li>
+                <li class="displayDefault" data-id=('EtreinteParquet2')>Extrait 2</li>
+              </ul>
+              <li class="list-li">Étreinte sauvage</li>
+              <ul class="sub-ul">
+                <li class="displayDefault" data-id=('EtreinteSauvage1')>Extrait 1</li>
+                <li class="displayDefault" data-id=('EtreinteSauvage2')>Extrait 2</li>
+              </ul>
+              <li class="list-li">Bien plus qu'une guilde, une guilde</li>
+              <li class="list-li">Un combat de titan</li>
+              <li class="list-li">Pause publicité</li>
+              <li class="list-li">Les aventures de Basaros</li>
+            </ul>
+          </div>
+        </td>
+        <td width="65%"> <!-- Partie contenu-->
+          <div id="chronique-container">
+            Ici reposera le futur contenu des chroniques
+          </div>
+        </td>
+      </table>
+    </div>
 
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script>
-  $(".chronique").each(function(){
-  console.log($(this).data("id") + ".html");
-    $($(this)).load($(this).data("id") + ".html");
-});
-  </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="chronique.js"></script>
   </body>
 </html>

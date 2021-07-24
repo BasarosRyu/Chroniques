@@ -12,6 +12,7 @@ $(document).ready(function() {
   $('.sub-ul li').click(function(e) {
     e.preventDefault();
     $('#chronique-container').empty();
+
     $('#chronique-container').load($(this).data("id") + ".html");
   })
 });

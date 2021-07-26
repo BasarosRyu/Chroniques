@@ -12,7 +12,8 @@ $(document).ready(function() {
   $('.sub-ul li').click(function(e) {
     e.preventDefault();
     $('#chronique-container').empty();
+    var tab = $(this).data("id");
 
-    $('#chronique-container').load($(this).data("id") + '#box');
+    $('#chronique-container').load(tab '#box');
   });
 });

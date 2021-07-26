@@ -14,5 +14,5 @@ $(document).ready(function() {
     $('#chronique-container').empty();
 
     $('#chronique-container').load($(this).data("id") '#box'));
-  })
+  });
 });

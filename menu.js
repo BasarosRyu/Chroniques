@@ -10,10 +10,10 @@ $(document).ready(function() {
 
 
   $('.sub-ul li').click(function(e) {
-    e.preventDefault();
-    $('#chronique-container').empty();
-    var tab = $(this).data("id");
+     e.preventDefault();
+     $('#chronique-container').empty();
+     var tab = $(this).data("id");
 
-    $('#chronique-container').load(tab + '#box');
-  });
-});
+     $('#chronique-container').load(tab + '#box');
+   });
+ });

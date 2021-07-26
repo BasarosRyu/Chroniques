@@ -14,6 +14,6 @@ $(document).ready(function() {
     $('#chronique-container').empty();
     var tab = $(this).data("id");
 
-    $('#chronique-container').load(tab '#box');
+    $('#chronique-container').load(tab + '#box');
   });
 });

@@ -13,6 +13,6 @@ $(document).ready(function() {
     e.preventDefault();
     $('#chronique-container').empty();
 
-    $('#chronique-container').load($(this).data("id") '#box');
+    $('#chronique-container').load($(this).data("id") '#box')));
   });
 });
